@@ -1,0 +1,9 @@
+.image1{
+  background-image: url(../img/Abstract\ Paper.svg);
+  background-size: cover;
+
+}
+
+.container-fluid{
+    height: 950px;
+}
