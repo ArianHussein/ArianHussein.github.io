@@ -7,3 +7,26 @@
 .container-fluid{
     height: 950px;
 }
+
+.pulse:hover {
+    animation: pulse 2s ease 0s infinite normal none;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.nav {
+    overflow: hidden;
+    position: fixed;
+    top: 40%;
+    width: 100%;
+}
