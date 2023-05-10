@@ -1,6 +1,7 @@
 .image1{
   background-image: url(../img/Abstract\ Paper.svg);
   background-size: cover;
+  background-position: center;
 
 }
 
@@ -29,4 +30,16 @@
     position: fixed;
     top: 40%;
     width: 100%;
+  
 }
+
+.cyan{
+    color: cyan;
+   
+}
+
+.white{
+
+    color: white;
+}
+
