@@ -258,7 +258,7 @@ body {
   }
   
   /*--------------------------------------------------------------
-  # Hero Section
+  # Home Section
   --------------------------------------------------------------*/
   #home {
     width: 100%;
@@ -406,11 +406,13 @@ body {
 
 
 .background3{
-    background-image: url(../img);
+   background-color: lightgrey;
 }
 
 .contact {
   padding-bottom: 130px;
+  background-image: url(../img/background3.jpg);
+  background-size: cover;
 }
 
 .contact .info {
