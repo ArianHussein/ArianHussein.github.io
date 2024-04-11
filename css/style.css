@@ -1,0 +1,74 @@
+.first-bg {
+    background-image: url(../img/animesher.com_dark-scenery-gif-1953738.gif);
+    background-size: cover;
+}
+
+.text1 {
+    padding: 15% 10%;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.text1 h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.text1 h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.text1 h5 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.text1:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+}
+
+
+/* navbar animation */
+.slide-right:hover {
+    animation: slide 2s ease 0s infinite alternate none;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(50px);
+    }
+}
+
+.nav {
+    overflow: hidden;
+    position: fixed;
+    top: 40%;
+    width: 100%;
+}
+
+.slide {
+    color: white;
+}
+
+.slide:hover {
+    color: rgb(217, 176, 255);
+    font-size: 30px;
+}
+
+.slide-right {
+    color: white;
+}
+
+.slide-right:hover {
+    color: rgb(217, 176, 255);
+    font-size: 30px;
+}
