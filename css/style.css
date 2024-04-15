@@ -1,6 +1,7 @@
 .first-bg {
     background-image: url(../img/animesher.com_dark-scenery-gif-1953738.gif);
     background-size: cover;
+  
 }
 
 .text1 {
@@ -9,6 +10,7 @@
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    max-height: 570px;
 }
 
 .text1 h2 {
