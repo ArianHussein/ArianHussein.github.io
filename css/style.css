@@ -9,7 +9,7 @@
 }
 
 .text1 {
-    padding: 40vh 10%; /* Adjust vertical padding to center the text vertically */
+    padding: 30vh 10%; /* Adjust vertical padding to center the text vertically */
     color: white;
     text-align: center;
     display: flex; /* Use flexbox */
@@ -81,3 +81,4 @@
     color: rgb(217, 176, 255);
     font-size: 30px;
 }
+
