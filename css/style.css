@@ -1,3 +1,59 @@
+:root {
+    --font-family: 'Arial', sans-serif;
+    --bg-color: #f8f9fa;
+    --text-color: #333;
+    --navbar-bg: #343a40;
+    --link-color: #fff;
+    --link-hover-color: rgb(217, 176, 255);
+    --highlight-color: #3498db;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --box-shadow-hover: 0 8px 12px rgba(0, 0, 0, 0.2);
+    --padding-section: 60px 0;
+    --padding-container: 15px;
+    --transition: all 0.3s ease-in-out;
+    --bg-blue: #e3f2fd;
+    --bg-hover: #c588fb;
+    --text-hover: #fff;
+    --highlight-after-width: 50px;
+    --highlight-after-height: 3px;
+    --section-title-font-size: 32px;
+    --section-title-margin-bottom: 40px;
+    --box-radius: 10px;
+    --p-color: #555;
+    --box-p-color: #666;
+    --description-bg-color: #f7f7f7;
+    --description-box-bg: #fff;
+    --description-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --description-box-h3-color: #333;
+    --section-title : #ffffff;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.section {
+    padding: var(--padding-section);
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar {
+    background-color: var(--navbar-bg);
+    color: var(--link-color);
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
 .first-bg {
     background-image: url(../img/animesher.com_dark-scenery-gif-1953738.gif);
     background-size: cover;
@@ -8,77 +64,79 @@
     background-size: cover;
 }
 
-.text1 {
-    padding: 30vh 10%; /* Adjust vertical padding to center the text vertically */
-    color: white;
-    text-align: center;
-    display: flex; /* Use flexbox */
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    margin-left: 630px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add box shadow */
-    transition: box-shadow 0.3s ease; /* Add transition for smooth hover effect */
+.third-bg {
+    background-image: url(../img/black-aesthetic-anime-black.gif);
+    background-size: cover;
 }
 
-.text1:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); /* Adjust box shadow on hover */
+.fourth-bg {
+    background-image: url(../img/sUCbOTRo.jpg);
+    background-size: cover;
 }
 
-.text1 h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+.fifth-bg {
+    background-image: url(../img/desciption.webp);
+    background-size: cover;
 }
 
-.text1 h3 {
-    font-size: 2rem;
-    font-weight: 400;
-    margin-bottom: 15px;
+.sixth-bg {
+    background-image: url(../img/mountainwater.gif);
+    background-size: cover;
 }
 
-.text1 h5 {
-    font-size: 1.5rem;
-    font-weight: 300;
-    margin-bottom: 0;
+.navbar-nav {
+    padding-top: 3%;
+    margin-left: 3%;
+    font-size: 25px;
 }
 
-/* navbar animation */
-.slide-right:hover {
-    animation: slide 2s ease 0s infinite alternate none;
+.nav-link {
+    color: var(--link-color);
+    font-size: 20px;
+    transition: var(--transition);
 }
 
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(50px);
-    }
-}
-
-.nav {
-    overflow: hidden;
-    position: fixed;
-    top: 40%;
-    width: 100%;
-}
-
-.slide {
-    color: white;
-}
-
-.slide:hover {
-    color: rgb(217, 176, 255);
+.nav-link:hover {
+    color: var(--link-hover-color);
     font-size: 30px;
 }
 
-.slide-right {
-    color: white;
-}
-
-.slide-right:hover {
-    color: rgb(217, 176, 255);
-    font-size: 30px;
-}
-
+.portfolio-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px; /* Increased padding for better spacing */
+    border-radius: 10px;
+    z-index: 1000; /* To ensure it's above other content */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .portfolio-block:hover {
+    transform: translate(-50%, -50%) scale(1.05); /* Scale up on hover */
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2); /* Increased shadow on hover */
+  
+  }
+  
+  .portfolio-block:hover h2,
+  .portfolio-block:hover p {
+    color: #fff; /* White text color on hover */
+  }
+  
+  .portfolio-block h2 {
+    font-size: 35px; /* Larger font size for the name */
+    margin-bottom: 10px; /* Increased margin for better spacing */
+    color: #ffffff; /* Dark text color */
+  }
+  
+  .portfolio-block p {
+    font-size: 25px; /* Smaller font size for the description */
+    color: #cfcfcf; /* Dark gray text color */
+    margin-bottom: 0; /* Remove default bottom margin */
+  }
+  
+  @media (max-width: 768px) {
+    .portfolio-block {
+      display: none; /* Hide on smaller screens */
+    }
+  }
