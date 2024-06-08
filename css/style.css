@@ -200,6 +200,34 @@ img {
     color: var(--text-hover);
 }
 
+.work-box {
+    background: transparent;
+    border-radius: var(--box-radius);
+    box-shadow: var(--box-shadow);
+    padding: 30px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.work-box:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--box-shadow-hover);
+    background-color: var(--bg-hover);
+    color: var(--text-hover);
+}
+
+.work-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-hover);
+    transition: color 0.3s ease-in-out;
+}
+
+.work-box:hover p {
+    color: var(--text-hover);
+}
+
+
 .section-title {
     color: var(--section-title);
 }
