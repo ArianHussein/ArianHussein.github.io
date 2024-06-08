@@ -25,7 +25,7 @@
     --description-box-bg: #fff;
     --description-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     --description-box-h3-color: #333;
-    --section-title : #ffffff;
+    --section-title: #ffffff;
 }
 
 html,
@@ -106,42 +106,55 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 30px; /* Increased padding for better spacing */
+    padding: 30px;
+    /* Increased padding for better spacing */
     border-radius: 10px;
-    z-index: 1000; /* To ensure it's above other content */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
-  }
-  
-  .portfolio-block:hover {
-    transform: translate(-50%, -50%) scale(1.05); /* Scale up on hover */
-    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2); /* Increased shadow on hover */
-  
-  }
-  
-  .portfolio-block:hover h2,
-  .portfolio-block:hover p {
-    color: #fff; /* White text color on hover */
-  }
-  
-  .portfolio-block h2 {
-    font-size: 35px; /* Larger font size for the name */
-    margin-bottom: 10px; /* Increased margin for better spacing */
-    color: #ffffff; /* Dark text color */
-  }
-  
-  .portfolio-block p {
-    font-size: 25px; /* Smaller font size for the description */
-    color: #cfcfcf; /* Dark gray text color */
-    margin-bottom: 0; /* Remove default bottom margin */
-  }
-  
-  @media (max-width: 768px) {
+    z-index: 1000;
+    /* To ensure it's above other content */
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.portfolio-block:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+    /* Scale up on hover */
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+    /* Increased shadow on hover */
+
+}
+
+.portfolio-block:hover h2,
+.portfolio-block:hover p {
+    color: #fff;
+    /* White text color on hover */
+}
+
+.portfolio-block h2 {
+    font-size: 35px;
+    /* Larger font size for the name */
+    margin-bottom: 10px;
+    /* Increased margin for better spacing */
+    color: #ffffff;
+    /* Dark text color */
+}
+
+.portfolio-block p {
+    font-size: 25px;
+    /* Smaller font size for the description */
+    color: #cfcfcf;
+    /* Dark gray text color */
+    margin-bottom: 0;
+    /* Remove default bottom margin */
+}
+
+@media (max-width: 768px) {
     .portfolio-block {
-      display: none; /* Hide on smaller screens */
+        display: none;
+        /* Hide on smaller screens */
     }
-  }
-  
-  
+}
+
+
 .about {
     background-color: var(--bg-color);
 }
@@ -359,38 +372,43 @@ img {
 }
 
 .circle-button {
-    display: none; /* Hide the button by default */
+    display: none;
+    /* Hide the button by default */
     position: fixed;
     bottom: 20px;
     right: 20px;
-  }
-  
-  .show-circle-button .circle-button {
-    display: flex; /* Show the button when the body has the show-circle-button class */
-  }
-  
-  .circle-button {
+}
+
+.show-circle-button .circle-button {
+    display: flex;
+    /* Show the button when the body has the show-circle-button class */
+}
+
+.circle-button {
     width: 60px;
     height: 60px;
-    background-color: #343a40; /* Dark background color */
-    border-radius: 50%; /* Make it a circle */
+    background-color: #343a40;
+    /* Dark background color */
+    border-radius: 50%;
+    /* Make it a circle */
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .circle-button:hover {
-    background-color: #495057; /* Darker background color on hover */
-  }
-  
-  .arrow {
-    color: #fff; /* White arrow color */
+}
+
+.circle-button:hover {
+    background-color: #495057;
+    /* Darker background color on hover */
+}
+
+.arrow {
+    color: #fff;
+    /* White arrow color */
     font-size: 24px;
-  }
-  
-  .back-to-top {
+}
+
+.back-to-top {
     text-decoration: none;
-  }
-  
+}
